@@ -1,4 +1,4 @@
-module Hasql.Class.Encodable where
+module Hasql.Class.Internal.Encodable where
 
 import Data.Default.Class (def)
 import qualified Hasql.Encoders as Hasql
@@ -9,7 +9,23 @@ import Data.Functor.Contravariant.Generic
 import Data.Int (Int16, Int32, Int64)
 import Data.Proxy (Proxy(..))
 
--- | Datatypes that can be encoded as `hasql` PostgreSQL parameters.
+-- | Datatypes that can be encoded as `hasql` PostgreSQL parameters. This class
+-- can be generically derived.
+--
+-- Note that the number of parameters is not necessarily the number of Haskell
+-- values. For example
+--
+-- > data MyData = MyData { aChar :: Char, aText :: Text }
+-- >  deriving (Eq, Show, Generic, Encodable)
+-- >
+-- > aData :: MyData
+-- > aData = MyDate 'a' "ha!"
+-- >
+-- > -- Will only insert the char, and a NULL for the text value
+-- > wrong = query aData stmtUnit "INSERT INTO myTable ($1)" True
+-- >
+-- > -- Will insert both the char and the text values
+-- > right = query aData stmtUnit "INSERT INTO myTable ($1, $2)" True
 --
 -- #SINCE#
 class Encodable a where

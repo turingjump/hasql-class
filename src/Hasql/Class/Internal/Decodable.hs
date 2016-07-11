@@ -1,4 +1,4 @@
-module Hasql.Class.Decodable where
+module Hasql.Class.Internal.Decodable where
 
 import Data.Default.Class (def)
 import qualified Hasql.Decoders as Hasql
@@ -8,7 +8,8 @@ import Data.ByteString (ByteString)
 import Data.Int
 import Generics.Eot
 
--- | Datatypes that can be encoded as `hasql` PostgreSQL parameters.
+-- | Datatypes that can be encoded as `hasql` PostgreSQL parameters.  This
+-- class can be generically derived.
 --
 --   #SINCE#
 class Decodable a where
