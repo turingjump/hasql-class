@@ -1,5 +1,5 @@
 name:                hasql-class
-version:             0.1.0.0
+version:             0.0.0.0
 synopsis:
 description:         Please see README.md
 homepage:            http://github.com/jkarni/hasql-class#readme
@@ -18,7 +18,7 @@ dependencies:
   - text
   - bytestring
   - vector
-  - time == 1.5.*
+  - time >= 1.4 && < 1.6
   - data-default-class == 0.0.*
   - contravariant == 1.4.*
   - hasql >= 0.19.11 && < 0.20
@@ -50,7 +50,7 @@ tests:
       - hspec > 2 && < 3
       - string-qq == 0.0.*
       - QuickCheck >= 2.8 && < 2.9
-      - process == 1.2.*
+      - process > 1.2 && < 2
       - quickcheck-instances == 0.3.*
   doctest:
     dependencies:
