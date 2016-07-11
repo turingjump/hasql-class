@@ -3,7 +3,7 @@
 -- see: https://github.com/sol/hpack
 
 name:           hasql-class
-version:        0.1.0.0
+version:        0.0.0.0
 description:    Please see README.md
 homepage:       http://github.com/jkarni/hasql-class#readme
 bug-reports:    https://github.com/turingjmp/hasql-class/issues
@@ -12,7 +12,7 @@ maintainer:     jkarni@gmail.com
 copyright:      (c) Julian K. Arni
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC == 7.8.3, GHC == 7.10.2, GHC == 8.0.1
+tested-with:    GHC == 7.10.3
 build-type:     Simple
 cabal-version:  >= 1.10
 
@@ -30,7 +30,7 @@ library
     , text
     , bytestring
     , vector
-    , time == 1.5.*
+    , time >= 1.4 && < 1.6
     , data-default-class == 0.0.*
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
@@ -53,12 +53,12 @@ test-suite doctest
     , text
     , bytestring
     , vector
-    , time == 1.5.*
+    , time >= 1.4 && < 1.6
     , data-default-class == 0.0.*
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
     , generics-eot == 0.2.*
-    , doctest >= 0.9 && < 0.11
+    , doctest >= 0.9 && < 0.12
     , Glob >= 0.7 && < 0.8
     , containers == 0.5.*
     , yaml == 0.8.*
@@ -79,7 +79,7 @@ test-suite spec
     , text
     , bytestring
     , vector
-    , time == 1.5.*
+    , time >= 1.4 && < 1.6
     , data-default-class == 0.0.*
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
@@ -88,7 +88,7 @@ test-suite spec
     , hspec > 2 && < 3
     , string-qq == 0.0.*
     , QuickCheck >= 2.8 && < 2.9
-    , process == 1.2.*
+    , process > 1.2 && < 2
     , quickcheck-instances == 0.3.*
   other-modules:
       Doctest
