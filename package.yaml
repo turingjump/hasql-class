@@ -1,0 +1,57 @@
+name:                hasql-class
+version:             0.1.0.0
+synopsis:
+description:         Please see README.md
+homepage:            http://github.com/jkarni/hasql-class#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Julian K. Arni
+maintainer:          jkarni@gmail.com
+copyright:           (c) Julian K. Arni
+github:              turingjmp/hasql-class
+
+ghc-options: -Wall
+
+dependencies:
+  - base >= 4.7 && < 4.10
+  - text
+  - bytestring
+  - time == 1.5.*
+  - data-default-class == 0.0.*
+  - contravariant == 1.4.*
+  - hasql >= 0.19.11 && < 0.20
+  - generics-eot == 0.2.*
+
+default-extensions:
+  - AutoDeriveTypeable
+  - DataKinds
+  - DefaultSignatures
+  - DeriveFoldable
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveTraversable
+  - FlexibleContexts
+  - FlexibleInstances
+  - ScopedTypeVariables
+
+library:
+  source-dirs:      src
+  other-modules:    []
+
+tests:
+  spec:
+    source-dirs:     test
+    main:            Spec.hs
+    dependencies:
+      - hasql-class
+      - hspec > 2 && < 3
+      - string-qq == 0.0.*
+      - QuickCheck >= 2.8 && < 2.9
+      - process == 1.2.*
+      - quickcheck-instances == 0.3.*
+  doctest:
+    dependencies:
+      - doctest >= 0.9 && < 0.11
+      - Glob >= 0.7 && < 0.8
+    source-dirs:     test
+    main:            Doctest.hs
