@@ -9,11 +9,11 @@ import Data.Int
 import Data.Text (Text)
 import qualified Data.Text as Text
 import GHC.Generics (Generic)
-import Hasql.Connection
-import Hasql.Session
+import Hasql.Connection (acquire, release)
+import Hasql.Session (query, Session, Error, sql, run)
 import System.Process (callCommand)
-import Test.Hspec
-import Test.QuickCheck
+import Test.Hspec (describe, it, Spec, shouldBe)
+import Test.QuickCheck (Arbitrary(..), property, (==>))
 import Test.QuickCheck.Instances ()
 
 import Hasql.Class

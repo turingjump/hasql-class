@@ -8,7 +8,9 @@ import Data.ByteString (ByteString)
 import Data.Int
 import Generics.Eot
 
--- | #SINCE#
+-- | Datatypes that can be encoded as `hasql` PostgreSQL parameters.
+--
+--   #SINCE#
 class Decodable a where
   decode :: Hasql.Row a
   default decode :: (HasEot a, GDecodable (Eot a)) => Hasql.Row a
