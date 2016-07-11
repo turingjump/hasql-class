@@ -64,3 +64,6 @@ VERSION=$( grep "^version:" package.yaml | awk '{ print $2 }')
 find . -name '.hs' | xargs -0 sed -i "s/#SINCE#/Since $VERSION/g"
 
 git commit -a .
+git tag "$VERSION"
+git push && git push --tags
+stack upload
