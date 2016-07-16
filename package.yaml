@@ -1,6 +1,7 @@
 name:                hasql-class
 version:             0.0.0.0
-synopsis:
+synopsis:            Encodable and Decodable classes for hasql
+category:            Hasql, Database, PostgreSQL
 description:         Please see README.md
 homepage:            http://github.com/jkarni/hasql-class#readme
 license:             BSD3

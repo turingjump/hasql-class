@@ -4,7 +4,9 @@
 
 name:           hasql-class
 version:        0.0.0.0
+synopsis:       Encodable and Decodable classes for hasql
 description:    Please see README.md
+category:       Hasql, Database, PostgreSQL
 homepage:       http://github.com/jkarni/hasql-class#readme
 bug-reports:    https://github.com/turingjmp/hasql-class/issues
 author:         Julian K. Arni
