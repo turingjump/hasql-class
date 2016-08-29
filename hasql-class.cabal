@@ -3,12 +3,12 @@
 -- see: https://github.com/sol/hpack
 
 name:           hasql-class
-version:        0.0.0.0
+version:        0.0.0.1
 synopsis:       Encodable and Decodable classes for hasql
 description:    Please see README.md
 category:       Hasql, Database, PostgreSQL
-homepage:       http://github.com/jkarni/hasql-class#readme
-bug-reports:    https://github.com/turingjmp/hasql-class/issues
+homepage:       http://github.com/turingjump/hasql-class#readme
+bug-reports:    https://github.com/turingjump/hasql-class/issues
 author:         Julian K. Arni
 maintainer:     jkarni@gmail.com
 copyright:      (c) Julian K. Arni
@@ -18,9 +18,12 @@ tested-with:    GHC == 7.10.3
 build-type:     Simple
 cabal-version:  >= 1.10
 
+extra-source-files:
+    README.md
+
 source-repository head
   type: git
-  location: https://github.com/turingjmp/hasql-class
+  location: https://github.com/turingjump/hasql-class
 
 library
   hs-source-dirs:

@@ -1,18 +1,19 @@
 name:                hasql-class
-version:             0.0.0.0
+version:             0.0.0.1
 synopsis:            Encodable and Decodable classes for hasql
 category:            Hasql, Database, PostgreSQL
 description:         Please see README.md
-homepage:            http://github.com/jkarni/hasql-class#readme
+homepage:            http://github.com/turingjump/hasql-class#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Julian K. Arni
 maintainer:          jkarni@gmail.com
 copyright:           (c) Julian K. Arni
-github:              turingjmp/hasql-class
+github:              turingjump/hasql-class
 tested-with:         GHC == 7.10.3
 
 ghc-options: -Wall
+extra-source-files:  README.md
 
 dependencies:
   - base >= 4.7 && < 4.10
