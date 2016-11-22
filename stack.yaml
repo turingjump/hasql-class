@@ -1,8 +1,5 @@
-resolver: lts-6.7
-extra-deps:
-    - hasql-0.19.12
-    - bytestring-tree-builder-0.2.7
-    - postgresql-binary-0.9
+resolver: lts-7.9
+extra-deps: []
 
 flags: {}
 extra-package-dbs: []

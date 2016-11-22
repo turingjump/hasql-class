@@ -20,8 +20,8 @@ dependencies:
   - text
   - bytestring
   - vector
-  - time >= 1.4 && < 1.6
-  - data-default-class == 0.0.*
+  - time >= 1.4 && < 1.7
+  - data-default-class > 0.0 && < 0.2
   - contravariant == 1.4.*
   - hasql >= 0.19.11 && < 0.20
   - generics-eot == 0.2.*

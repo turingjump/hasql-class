@@ -1,4 +1,4 @@
--- This file has been generated from package.yaml by hpack version 0.14.0.
+-- This file has been generated from package.yaml by hpack version 0.14.1.
 --
 -- see: https://github.com/sol/hpack
 
@@ -35,8 +35,8 @@ library
     , text
     , bytestring
     , vector
-    , time >= 1.4 && < 1.6
-    , data-default-class == 0.0.*
+    , time >= 1.4 && < 1.7
+    , data-default-class > 0.0 && < 0.2
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
     , generics-eot == 0.2.*
@@ -58,8 +58,8 @@ test-suite doctest
     , text
     , bytestring
     , vector
-    , time >= 1.4 && < 1.6
-    , data-default-class == 0.0.*
+    , time >= 1.4 && < 1.7
+    , data-default-class > 0.0 && < 0.2
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
     , generics-eot == 0.2.*
@@ -84,8 +84,8 @@ test-suite spec
     , text
     , bytestring
     , vector
-    , time >= 1.4 && < 1.6
-    , data-default-class == 0.0.*
+    , time >= 1.4 && < 1.7
+    , data-default-class > 0.0 && < 0.2
     , contravariant == 1.4.*
     , hasql >= 0.19.11 && < 0.20
     , generics-eot == 0.2.*
