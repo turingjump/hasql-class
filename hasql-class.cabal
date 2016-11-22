@@ -3,7 +3,7 @@
 -- see: https://github.com/sol/hpack
 
 name:           hasql-class
-version:        0.0.0.1
+version:        0.0.1.0
 synopsis:       Encodable and Decodable classes for hasql
 description:    Please see README.md
 category:       Hasql, Database, PostgreSQL
