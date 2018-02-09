@@ -1,3 +1,4 @@
+{-# LANGUAGE MonoLocalBinds #-}
 module Hasql.Class.Internal.Decodable where
 
 import Data.Default.Class (def)

@@ -16,14 +16,14 @@ ghc-options: -Wall
 extra-source-files:  README.md
 
 dependencies:
-  - base >= 4.7 && < 4.10
+  - base >= 4.7 && < 4.11
   - text
   - bytestring
   - vector
-  - time >= 1.4 && < 1.7
+  - time >= 1.4 && < 1.9
   - data-default-class > 0.0 && < 0.2
   - contravariant == 1.4.*
-  - hasql >= 0.19.11 && < 0.20
+  - hasql >= 0.19.11 && < 1.2
   - generics-eot == 0.2.*
 
 default-extensions:
@@ -51,14 +51,6 @@ tests:
       - hasql-class
       - hspec > 2 && < 3
       - string-qq == 0.0.*
-      - QuickCheck >= 2.8 && < 2.9
+      - QuickCheck >= 2.8 && < 2.12
       - process > 1.2 && < 2
       - quickcheck-instances == 0.3.*
-  doctest:
-    dependencies:
-      - doctest >= 0.9 && < 0.12
-      - Glob >= 0.7 && < 0.8
-      - containers == 0.5.*
-      - yaml == 0.8.*
-    source-dirs:     test
-    main:            Doctest.hs
