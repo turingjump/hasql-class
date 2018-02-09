@@ -2,10 +2,10 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: cc941e7f0778ec50da463adadb7c4843efa9db48af44c9e6abfda368e5691958
+-- hash: adc5ea212d969faa1de603cd41dada7786577c5dad0c9852e3e2d38c81334e34
 
 name:           hasql-class
-version:        0.0.1.0
+version:        0.1.0.0
 synopsis:       Encodable and Decodable classes for hasql
 description:    Please see README.md
 category:       Hasql, Database, PostgreSQL

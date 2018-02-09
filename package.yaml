@@ -1,5 +1,5 @@
 name:                hasql-class
-version:             0.0.1.0
+version:             0.1.0.0
 synopsis:            Encodable and Decodable classes for hasql
 category:            Hasql, Database, PostgreSQL
 description:         Please see README.md
